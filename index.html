@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <section class="background">
+    <header class="header">
+      <div class="header__brand">HadrianBlog</div>
+      <div class="header__navigation">
+        <li class="header__button">blog</li>
+        <li class="header__button">galeria</li>
+      </div>
+    </header>
+    <main class="blog">
+      <div class="blog__container blog__container--js">
+
+        <!-- <article class="article">
+          <h2 class="article__header">Dlaczego piszę bloga?</h2>
+          <p class="article__content">pattern</p>
+        </article> -->
+
+        <form class="form">
+          <label for="title">Tytuł</label>
+          <input id="title" class="title--js">
+          <label for="content">Treść</label>
+          <input id="content" class="content--js">
+          <button class="add--js">Dodaj</button>
+        </form>
+
+      </div>
+    </main>
+  </section>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBjm0OPcXSb-lD1YiUhaM2Tbvk5nTMwY6M",
+      authDomain: "hadrian-test-5a70f.firebaseapp.com",
+      databaseURL: "https://hadrian-test-5a70f.firebaseio.com",
+      projectId: "hadrian-test-5a70f",
+      storageBucket: "hadrian-test-5a70f.appspot.com",
+      messagingSenderId: "87929167428",
+      appId: "1:87929167428:web:8f82c048f81b9bb3766611"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
