@@ -1,6 +1,6 @@
-const titleField = document.querySelector('.title--js');
-const contentField = document.querySelector('.content--js');
-const addButton = document.querySelector('.add--js');
+const titleField = document.querySelector('.form__title--js');
+const contentField = document.querySelector('.form__content--js');
+const addButton = document.querySelector('.form__add--js');
 const blogArea = document.querySelector('.blog__container--js');
 
 const database = firebase.database();
