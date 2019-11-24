@@ -61,7 +61,10 @@ body {
     margin: 6px;
     font-size: 48px;
   }
-  &__content {
+  &__area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     background: whitesmoke;
     margin: 0;
     padding: 12px 16px;
