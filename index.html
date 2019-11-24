@@ -12,30 +12,27 @@
 <body>
   <section class="background">
     <header class="header">
-      <div class="header__brand">HadrianBlog</div>
+      <div class="header__brand"><i class="fas fa-pen-nib"></i> HadrianBlog</div>
       <div class="header__navigation">
         <li class="header__button">blog</li>
         <li class="header__button">galeria</li>
       </div>
     </header>
-    <main class="blog">
-      <div class="blog__container blog__container--js">
-
-        <!-- <article class="article">
-          <h2 class="article__header">Dlaczego piszę bloga?</h2>
-          <p class="article__content">pattern</p>
-        </article> -->
-
-        <form class="form">
-          <label for="title">Tytuł</label>
-          <input id="title" class="title--js">
-          <label for="content">Treść</label>
-          <input id="content" class="content--js">
-          <button class="add--js">Dodaj</button>
+    <div class="main-container">
+      <main class="blog">
+        <div class="blog__container blog__container--js">
+          <!-- blog here -->
+        </div>
+        <form autocomplete="off" class="form">
+          <label for="title" class="form__label">Tytuł</label>
+          <input id="title" class="form__title form__title--js">
+          <label for="content" class="form__label">Treść</label>
+          <textarea id="content" class="form__content form__content--js"></textarea>
+          <button class="form__add form__add--js">Dodaj artykuł</button>
         </form>
+      </main>
+    </div>
 
-      </div>
-    </main>
   </section>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -59,7 +56,7 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
-
+  <script src="https://kit.fontawesome.com/e24250d8fd.js"></script>
   <script src="js/main.js"></script>
 </body>
 
