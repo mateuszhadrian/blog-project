@@ -1,0 +1,71 @@
+@import "_normalize";
+@import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Cuprum&display=swap');
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Cuprum', sans-serif;
+  background: $background;
+}
+.background {
+  position: relative;
+  height: 100vh;
+  background-image: url(../assets/imgs/background.jpg);
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  background: rgba(10, 10, 10, 0.253);
+  color: white;
+  padding: 12px;
+  display: flex;
+  font-size: 36px;
+  justify-content: space-between;
+  align-items: baseline;
+    &__brand {
+      margin:0;
+    }
+    &__navigation {
+      list-style-type: none;
+      font-size: 32px;
+      display: flex;
+    }
+    &__button {
+      padding: 0 24px;
+    }
+}
+
+.blog {
+  padding: 96px 72px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  &__container {
+    max-width: 60vw;
+  }
+}
+
+.article {
+  margin-top: 112px;
+  &__header{
+    margin: 6px;
+    font-size: 48px;
+  }
+  &__content {
+    background: whitesmoke;
+    margin: 0;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 24px;
+  }
+}
