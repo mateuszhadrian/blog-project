@@ -347,7 +347,7 @@ body {
   width: 80vw; }
 
 .form {
-  margin-top: 60vh;
+  margin-top: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +433,7 @@ body {
     max-width: 60vw; }
 
 .article {
-  margin-top: 96px; }
+  margin-top: 25vh; }
   .article__header {
     margin: 6px;
     font-size: 48px; }
@@ -458,7 +458,7 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 20px;
-    padding: 8px;
+    padding: 8px 14px;
     -webkit-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out; }

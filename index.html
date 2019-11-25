@@ -20,16 +20,18 @@
     </header>
     <div class="main-container">
       <main class="blog">
+          <form autocomplete="off" class="form">
+              <label for="title" class="form__label">Tytuł</label>
+              <input id="title" class="form__title form__title--js">
+              <label for="content" class="form__label">Treść</label>
+              <textarea id="content" class="form__content form__content--js"></textarea>
+              <button class="form__add form__add--js">Dodaj artykuł</button>
+            </form>
         <div class="blog__container blog__container--js">
+          <div class="top"></div>
           <!-- blog here -->
         </div>
-        <form autocomplete="off" class="form">
-          <label for="title" class="form__label">Tytuł</label>
-          <input id="title" class="form__title form__title--js">
-          <label for="content" class="form__label">Treść</label>
-          <textarea id="content" class="form__content form__content--js"></textarea>
-          <button class="form__add form__add--js">Dodaj artykuł</button>
-        </form>
+        
       </main>
     </div>
 
