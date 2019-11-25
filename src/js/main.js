@@ -2,6 +2,7 @@ const titleField = document.querySelector('.form__title--js');
 const contentField = document.querySelector('.form__content--js');
 const addButton = document.querySelector('.form__add--js');
 const blogArea = document.querySelector('.blog__container--js');
+const top = document.querySelector('.top');
 
 const database = firebase.database();
 const rootRef = database.ref('blogArticles');
@@ -16,12 +17,14 @@ addButton.addEventListener('click', (e) => {
         title: titleField.value,
         content: contentField.value
     })
+    newestArticle = blogArea.querySelector('.article');
     window.location.reload(true);
 })
 
 rootRef.orderByKey().once('value', snapshot => {
     const articles = snapshot.val();
     const articleTable = [];
+    
     for (const i in articles) {
         articleTable.push(articles[i]);
 
@@ -57,11 +60,13 @@ rootRef.orderByKey().once('value', snapshot => {
         newArticle.appendChild(articleArea);
 
         blogArea.appendChild(newArticle);
+
         //     blogArea.innerHTML += `<article class="article" id="${article.id}">
         //     <h2 class="article__header">${article.title}</h2>
         //     <p class="article__content">${article.content}</p>
         //   </article>`
     }
+
     const removeButtonClick = document.querySelectorAll('.article__button--remove-js');
     for (let i = 0; i < removeButtonClick.length; i++){
         removeButtonClick[i].addEventListener('click', (e) => {
